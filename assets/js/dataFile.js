@@ -9,9 +9,9 @@ for (var i = 0; i < finances.length; i++) {// adds all the numbers in index 1 ie
     //   console.log("finances arrAmounts" + arrAmounts);//lists months and correspondong amounts
     //   console.log("finances[i][1]" + finances[i][1]);//  lists the amounts in the array, index 1 position
 }
-console.log("    " + "Financial Analysis \n ----------------------------")
-console.log("Total Months: " + totalMonths);
-console.log("Total: $" + netTotal);
+//console.log("    " + "Financial Analysis \n ----------------------------")
+//console.log("Total Months: " + totalMonths);
+//console.log("Total: $" + netTotal);
 
 
 
@@ -30,25 +30,20 @@ for (var i = 0; i < n-1; i++) {
     console.log(finances[i][0] + " Change per month: $" + netChange);
     changeArray.push(finances[i][1] - finances[i + 1][1]);
     //console.log(i + " Change array: $" + changeArray);
+   // console.log(" Change Array: $" + changeArray[i]);
    
-     
+   //console.log(" Change Array inside for: $" + changeArray[i]);  
 }
 
-console.log(i + " Change array: $" + changeArray);
 
-//console.log(Math.max(changeArray));
-// work out min increase
+//console.log(changeArray);
 
-//console.log(Math.min(changeArray));
-// work out min increase
+var maxIncrease = Math.max(...changeArray);//calculates the greatest increase
+//console.log(i + "Greatest increase: $" + maxIncrease);
 
+var maxDecrease = Math.min(...changeArray);
+////console.log(i + "Greatest decrease: $ " + maxDecrease);//calculates the greatest decrease
 
-var maxIncrease = Math.max(changeArray);
-console.log("Greatest increase: $" + maxIncrease);
-
-
-var maxDecrease = Math.min(changeArray);
-console.log("Greatest decrease: $ " + maxDecrease);
 
 //average net change is total net change divided by total months
 var avgChange = 0;
@@ -56,14 +51,14 @@ var avgChange = 0;
 //average net change is total net change divided by total month
 
 avgChange = netChange / totalMonths;
-console.log(netChange + " divided by " + totalMonths + " equals Total net change: $" + avgChange);
+//console.log(netChange + " divided by " + totalMonths + " equals Total net change: $" + avgChange);
 
 avgChange = avgChange.toFixed(2);
-console.log (avgChange)
+//console.log (avgChange)
 
-console.log(netChange + " divided by " + totalMonths + " equals Total net change: $" + avgChange);
+//console.log(netChange + " divided by " + totalMonths + " equals Total net change: $" + avgChange);
 
-console.log("Average Change: $" + avgChange);
+//console.log("Average Change: $" + avgChange);
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -72,7 +67,7 @@ console.log("Total Months: " + totalMonths);
 console.log("Total: $" + netTotal);
 console.log("Average Change: $" + avgChange);
 console.log("Greatest increase: $" + maxIncrease);
-console.log("Greatest decrease: $ " + maxDecrease);
+console.log("Greatest decrease: $" + maxDecrease);
 
 
 
