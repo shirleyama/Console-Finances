@@ -5,8 +5,8 @@ var totalMonths = finances.length;// calculates total number of months
 var netTotal = 0;
 for (var i = 0; i < finances.length; i++) {// adds all the numbers in index 1 ie the second array
     netTotal += finances[i][1];
-    //arrAmounts = finances[i];
-    //   console.log("finances arrAmounts" + arrAmounts);//lists months and correspondong amounts
+    arrAmounts = finances[i];
+    console.log(i + "finances" + arrAmounts);//lists months and correspondong amounts
     //   console.log("finances[i][1]" + finances[i][1]);//  lists the amounts in the array, index 1 position
 }
 //console.log("    " + "Financial Analysis \n ----------------------------")
@@ -27,7 +27,7 @@ for (var i = 0; i < n-1; i++) {
     // console.log(finances[i][1] + " minus " + finances[i + 1][1] + " equals " + changePerMonth);
     //  console.log("finances[i][1]" + finances[i][1])
     netChange += changePerMonth; //find the sum of the changes
-    console.log(finances[i][0] + " Change per month: $" + netChange);
+   // console.log(finances[i][0] + " Change per month: $" + netChange);
     changeArray.push(finances[i][1] - finances[i + 1][1]);
     //console.log(i + " Change array: $" + changeArray);
    // console.log(" Change Array: $" + changeArray[i]);
@@ -36,7 +36,7 @@ for (var i = 0; i < n-1; i++) {
 }
 
 
-//console.log(changeArray);
+console.log(changeArray);
 
 var maxIncrease = Math.max(...changeArray);//calculates the greatest increase
 //console.log(i + "Greatest increase: $" + maxIncrease);
