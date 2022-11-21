@@ -73,7 +73,7 @@ var greatestMonthIncrease = finances[indexMax][0];//Finds the date corresponding
 //console.log("Greatest increase: " + greatestMonthIncrease + ": $" + maxIncrease);
 
 ///////////////////////////////////////////////////////////////////////////////////////////
-//The greatest increase in profits (date and amount) over the entire period.
+//The greatest decrease in profits (date and amount) over the entire period.
 
 var maxDecrease = Math.min(...changeArray);
 //console.log("Greatest decrease: $ " + maxDecrease);//calculates the greatest decrease
